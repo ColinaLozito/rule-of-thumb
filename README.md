@@ -1,7 +1,7 @@
 # rule-of-thumb
 Thumb voting app
 
-##Description
+## Description
 
 This is a test porject developed with React.js and Redux
 
@@ -10,6 +10,8 @@ This App is a simple vote system where you can vote fore any of the people that 
 You can vote any times that you like
 
 Also the votes scores that you make will persist in you browser
+
+NOTE: This project was developed under 2 days with only the functionality and logic of the vote system. Until now nothing else have the corresponding functionality
 
 ## Getting Started
 
