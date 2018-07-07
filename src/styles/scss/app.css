@@ -1,0 +1,558 @@
+body, html, #root {
+  font-family: Lato;
+  height: 100%;
+  width: 100%;
+  background-color: #f7f7f7; }
+
+.App {
+  height: 100%;
+  width: 100%; }
+  .App .pope-landing {
+    background-image: url("/images/pope.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    height: 47em; }
+    .App .pope-landing .blur-box {
+      color: #dedede;
+      top: 10em;
+      width: 100%;
+      background: inherit;
+      position: relative;
+      overflow: hidden;
+      padding: 35px; }
+      .App .pope-landing .blur-box p {
+        z-index: 9999;
+        position: relative; }
+      .App .pope-landing .blur-box:before {
+        width: 200%;
+        height: 200%;
+        content: "";
+        position: absolute;
+        top: -37%;
+        left: -21%;
+        background: inherit;
+        -webkit-box-shadow: inset 0 0 0 5000px rgba(0, 0, 0, 0.322);
+        box-shadow: inset 0 0 0 5000px rgba(0, 0, 0, 0.322);
+        -webkit-filter: blur(35px);
+        filter: blur(35px);
+        z-index: 0; }
+      .App .pope-landing .blur-box .name {
+        color: white;
+        font-size: 2em; }
+      .App .pope-landing .blur-box .info {
+        color: #dedede; }
+      .App .pope-landing .blur-box .veredict {
+        color: white;
+        font-size: 1em; }
+      .App .pope-landing .blur-box .content {
+        font-size: 1em; }
+      .App .pope-landing .blur-box .thumb-box {
+        display: flex;
+        text-align: center;
+        position: inherit;
+        margin-right: -36px;
+        margin-left: -36px; }
+        .App .pope-landing .blur-box .thumb-box div {
+          width: 50%;
+          padding-top: 10px;
+          padding-bottom: 10px;
+          margin-bottom: -36px; }
+        .App .pope-landing .blur-box .thumb-box .thumb-up-btn {
+          background-color: #2dbbb4; }
+          .App .pope-landing .blur-box .thumb-box .thumb-up-btn img {
+            height: 2em; }
+        .App .pope-landing .blur-box .thumb-box .thumb-down-btn {
+          background-color: #f2a929; }
+          .App .pope-landing .blur-box .thumb-box .thumb-down-btn img {
+            height: 2em; }
+  .App .left-days {
+    bottom: 0;
+    position: absolute;
+    width: 100%; }
+    .App .left-days .closing-text {
+      width: 35%;
+      text-align: right;
+      color: white;
+      background-color: #00000061; }
+      .App .left-days .closing-text p {
+        font-size: 13px;
+        margin-bottom: 0px;
+        margin-top: 1.1em;
+        margin-right: 1em; }
+    .App .left-days .days {
+      width: 65%;
+      color: black;
+      background-color: #e2e1e1a8;
+      font-size: 2em; }
+      .App .left-days .days p {
+        margin-bottom: 0px;
+        margin-left: 0.6em; }
+
+.message-box {
+  background-color: lightgrey;
+  margin-top: 2em; }
+  .message-box p {
+    margin-bottom: 0 !important; }
+  .message-box .statement {
+    padding: 1em 0 1em 1.7em; }
+    .message-box .statement .statement-1 {
+      font-size: 1.3em; }
+    .message-box .statement .statement-2 {
+      font-size: 2em; }
+  .message-box .message {
+    padding-top: 1.7em; }
+  .message-box .close {
+    text-align: center; }
+    .message-box .close a img {
+      padding-top: 1.9em; }
+
+.main-nav {
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.4));
+  text-align: center; }
+  .main-nav .navbar-brand {
+    font-size: 2em; }
+  .main-nav a {
+    color: white !important; }
+  .main-nav ul li a {
+    color: white !important; }
+
+.votes-main {
+  padding-bottom: 3em; }
+  .votes-main .votes-content .vote-box {
+    height: 34em;
+    margin-bottom: 2em; }
+    .votes-main .votes-content .vote-box .vote-container {
+      background: linear-gradient(360deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.01));
+      bottom: 0;
+      position: absolute;
+      color: white;
+      width: 100%;
+      padding-top: 8em; }
+      .votes-main .votes-content .vote-box .vote-container .thumb-rank {
+        position: absolute;
+        margin-top: 0.6em; }
+        .votes-main .votes-content .vote-box .vote-container .thumb-rank img {
+          height: 1.5em; }
+        .votes-main .votes-content .vote-box .vote-container .thumb-rank .thumb-up {
+          background-color: #2dbbb4;
+          padding: 0.3em; }
+        .votes-main .votes-content .vote-box .vote-container .thumb-rank .thumb-down {
+          background-color: #f2a929;
+          padding: 0.3em; }
+      .votes-main .votes-content .vote-box .vote-container .name {
+        padding-right: 3em;
+        padding-left: 3em; }
+        .votes-main .votes-content .vote-box .vote-container .name h2 {
+          font-size: 3em; }
+      .votes-main .votes-content .vote-box .vote-container .category {
+        padding-right: 3em;
+        padding-left: 3em; }
+        .votes-main .votes-content .vote-box .vote-container .category p {
+          font-size: 0.8em; }
+      .votes-main .votes-content .vote-box .vote-container .content {
+        padding-right: 3em;
+        padding-left: 3em; }
+      .votes-main .votes-content .vote-box .vote-container .buttons-box {
+        padding-right: 3em;
+        padding-left: 3em;
+        padding-bottom: 2em; }
+        .votes-main .votes-content .vote-box .vote-container .buttons-box div {
+          display: inline-block;
+          padding: 0.3em;
+          margin-right: 0.4em; }
+          .votes-main .votes-content .vote-box .vote-container .buttons-box div img {
+            height: 1.5em; }
+        .votes-main .votes-content .vote-box .vote-container .buttons-box .thumb-up label > input {
+          /* HIDE RADIO */
+          visibility: hidden;
+          /* Makes input not-clickable */
+          position: absolute;
+          /* Remove input from document flow */ }
+        .votes-main .votes-content .vote-box .vote-container .buttons-box .thumb-up label > input + div {
+          /* IMAGE STYLES */
+          cursor: pointer;
+          background-color: #2dbbb4;
+          padding: 0.5em;
+          border: 2px solid transparent; }
+        .votes-main .votes-content .vote-box .vote-container .buttons-box .thumb-up label > input:checked + div {
+          /* (RADIO CHECKED) IMAGE STYLES */
+          border: 2px solid white; }
+        .votes-main .votes-content .vote-box .vote-container .buttons-box .thumb-down label > input {
+          /* HIDE RADIO */
+          visibility: hidden;
+          /* Makes input not-clickable */
+          position: absolute;
+          /* Remove input from document flow */ }
+        .votes-main .votes-content .vote-box .vote-container .buttons-box .thumb-down label > input + div {
+          /* IMAGE STYLES */
+          cursor: pointer;
+          background-color: #f2a929;
+          padding: 0.5em;
+          border: 2px solid transparent; }
+        .votes-main .votes-content .vote-box .vote-container .buttons-box .thumb-down label > input:checked + div {
+          /* (RADIO CHECKED) IMAGE STYLES */
+          border: 2px solid white; }
+        .votes-main .votes-content .vote-box .vote-container .buttons-box .vote-now {
+          border: 0.1em solid white; }
+          .votes-main .votes-content .vote-box .vote-container .buttons-box .vote-now button {
+            background: transparent;
+            color: white; }
+      .votes-main .votes-content .vote-box .vote-container .votes-percent {
+        background-color: #f2a929a3; }
+        .votes-main .votes-content .vote-box .vote-container .votes-percent .thumbUp-percent {
+          float: left; }
+          .votes-main .votes-content .vote-box .vote-container .votes-percent .thumbUp-percent img {
+            padding-left: 1em;
+            padding-right: 0.5em;
+            margin-top: 0.4em;
+            margin-bottom: 0.4em;
+            height: 1.9em; }
+          .votes-main .votes-content .vote-box .vote-container .votes-percent .thumbUp-percent p {
+            display: inline-block;
+            font-size: 22px;
+            position: absolute;
+            bottom: 0;
+            margin-bottom: 6px; }
+        .votes-main .votes-content .vote-box .vote-container .votes-percent .thumbDown-percent {
+          position: absolute;
+          right: 0; }
+          .votes-main .votes-content .vote-box .vote-container .votes-percent .thumbDown-percent img {
+            padding-right: 1em;
+            padding-left: 0.5em;
+            margin-top: 0.4em;
+            margin-bottom: 0.4em;
+            height: 1.9em; }
+          .votes-main .votes-content .vote-box .vote-container .votes-percent .thumbDown-percent p {
+            display: inline-block;
+            font-size: 22px;
+            position: absolute;
+            bottom: 0;
+            margin-bottom: 6px;
+            margin-left: -57px; }
+
+.add-name-div {
+  padding-right: 2em;
+  padding-left: 2em;
+  margin-bottom: 3em; }
+
+.add-name {
+  background-image: url("/images/people.png");
+  height: 18em; }
+  .add-name .content {
+    background-color: rgba(255, 255, 255, 0.7);
+    height: 100%; }
+    .add-name .content .text {
+      font-size: 2em;
+      margin-top: 0.7em; }
+    .add-name .content .button {
+      margin: auto;
+      margin-top: 1.3em; }
+      .add-name .content .button a {
+        font-size: 1.5em;
+        text-align: center;
+        border: 3px solid black;
+        padding-left: 2em;
+        padding-right: 2em; }
+
+.unfinished {
+  height: 650px; }
+  .unfinished h2 {
+    position: absolute;
+    padding-top: 160px;
+    padding-left: 115px; }
+
+.footer {
+  border-top: 2px dotted;
+  border-color: #dadada;
+  padding-top: 2em;
+  width: 100%;
+  height: 6em; }
+  @media only screen and (max-width: 767px) {
+    .footer ul {
+      padding-left: 0px; } }
+  .footer li {
+    list-style-type: none;
+    text-align: center; }
+  @media only screen and (max-width: 767px) {
+    .footer .tems-links {
+      width: 100%; } }
+  .footer .tems-links li {
+    font-size: 0.8em; }
+  .footer .links li p {
+    font-size: 0.8em; }
+  @media only screen and (max-width: 767px) {
+    .footer .links .fb {
+      display: table;
+      margin: 0 auto;
+      margin-bottom: 1em; }
+    .footer .links .twrt {
+      display: table;
+      margin: 0 auto; } }
+
+@media only screen and (min-width: 1024px) {
+  .main-nav {
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.01));
+    height: 7em;
+    padding-left: 7em;
+    position: absolute;
+    z-index: 99999; }
+    .main-nav .collapse .navbar-nav {
+      position: absolute;
+      right: 0;
+      padding-right: 4em; }
+      .main-nav .collapse .navbar-nav li {
+        padding-left: 2em; }
+  .pope-landing {
+    background-image: url("/images/pope.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 47em; }
+    .pope-landing .blur-box {
+      color: #dedede;
+      top: 7em !important;
+      left: 4em !important;
+      width: 40% !important;
+      background: inherit;
+      position: relative;
+      overflow: hidden;
+      padding: 35px;
+      margin-left: 2em; }
+      .pope-landing .blur-box p {
+        z-index: 9999;
+        position: relative; }
+      .pope-landing .blur-box:before {
+        width: 200%;
+        height: 200%;
+        content: "";
+        position: absolute;
+        top: -37%;
+        left: -21%;
+        background: inherit;
+        -webkit-box-shadow: inset 0 0 0 5000px rgba(0, 0, 0, 0.322);
+        box-shadow: inset 0 0 0 5000px rgba(0, 0, 0, 0.322);
+        -webkit-filter: blur(35px);
+        filter: blur(35px);
+        z-index: 0; }
+      .pope-landing .blur-box .name {
+        color: white !important;
+        font-size: 4em !important; }
+      .pope-landing .blur-box .info {
+        color: #dedede !important; }
+      .pope-landing .blur-box .veredict {
+        color: white !important;
+        font-size: 2em !important; }
+      .pope-landing .blur-box .content {
+        font-size: 1.3em !important; }
+      .pope-landing .blur-box .thumb-box {
+        display: flex;
+        text-align: center;
+        position: inherit;
+        margin-right: -36px;
+        margin-left: -36px; }
+        .pope-landing .blur-box .thumb-box div {
+          width: 50%;
+          padding-top: 15px;
+          padding-bottom: 20px;
+          margin-bottom: -36px; }
+        .pope-landing .blur-box .thumb-box .thumb-up-btn {
+          background-color: #2dbbb4; }
+        .pope-landing .blur-box .thumb-box .thumb-down-btn {
+          background-color: #f2a929; }
+  .left-days {
+    bottom: 0;
+    position: absolute;
+    width: 100%; }
+    .left-days .closing-text {
+      width: 35%;
+      text-align: right;
+      color: white;
+      background-color: #00000061; }
+      .left-days .closing-text p {
+        font-size: 13px;
+        margin-bottom: 0px;
+        margin-top: 1.1em;
+        margin-right: 1em; }
+    .left-days .days {
+      width: 65%;
+      color: black;
+      background-color: #e2e1e1a8;
+      font-size: 2em; }
+      .left-days .days p {
+        margin-bottom: 0px;
+        margin-left: 0.6em; }
+  .message-container {
+    padding-right: 3em; }
+  .message-box {
+    background-color: lightgrey;
+    margin-top: 2em;
+    margin-left: 15px;
+    margin-right: 15px; }
+    .message-box p {
+      margin-bottom: 0 !important; }
+    .message-box .statement {
+      padding: 1em 0 1em 1.7em; }
+      .message-box .statement .statement-1 {
+        font-size: 1.3em; }
+      .message-box .statement .statement-2 {
+        font-size: 2em; }
+    .message-box .message {
+      padding-top: 1.7em; }
+    .message-box .close {
+      text-align: center; }
+      .message-box .close a img {
+        padding-top: 1.9em; }
+  .footer {
+    border-top: 2px dotted;
+    border-color: #dadada;
+    padding-top: 2em;
+    padding-left: 7em;
+    padding-right: 7em;
+    width: 100%;
+    height: 6em; }
+    .footer li {
+      display: inline-block; }
+    .footer .tems-links {
+      float: left;
+      margin-left: -40px; }
+      .footer .tems-links li {
+        padding-right: 1.5em;
+        font-size: 0.8em; }
+    .footer .links {
+      float: right; }
+      .footer .links li {
+        padding-left: 1.5em; }
+        .footer .links li p {
+          font-size: 0.8em; }
+  .add-name-div {
+    padding-right: 2em;
+    padding-left: 2em;
+    margin-bottom: 3em; }
+  .add-name {
+    background-image: url("/images/people.png");
+    height: 6em; }
+    .add-name .content {
+      background-color: rgba(255, 255, 255, 0.7);
+      height: 100%; }
+      .add-name .content .text {
+        float: left;
+        font-size: 2em;
+        margin-top: 0.7em; }
+      .add-name .content .button {
+        float: right;
+        margin-top: 1.3em; }
+        .add-name .content .button a {
+          font-size: 1.5em;
+          text-align: center;
+          border: 3px solid black;
+          padding-left: 2em;
+          padding-right: 2em; } }
+
+@media only screen and (min-width: 1024px) and (max-width: 1366px) {
+  .App .pope-landing .blur-box {
+    width: 50%; }
+  .add-name {
+    background-image: url("/images/people.png"); }
+    .add-name .content .text {
+      font-size: 1.7em;
+      margin-top: 0.7em; } }
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .App .pope-landing {
+    background-image: url("/images/pope.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 47em; }
+    .App .pope-landing .blur-box {
+      color: #dedede;
+      top: 7em;
+      width: 78%;
+      background: inherit;
+      position: relative;
+      overflow: hidden;
+      padding: 35px; }
+      .App .pope-landing .blur-box p {
+        z-index: 9999;
+        position: relative; }
+      .App .pope-landing .blur-box:before {
+        width: 200%;
+        height: 200%;
+        content: "";
+        position: absolute;
+        top: -37%;
+        left: -21%;
+        background: inherit;
+        -webkit-box-shadow: inset 0 0 0 5000px rgba(0, 0, 0, 0.322);
+        box-shadow: inset 0 0 0 5000px rgba(0, 0, 0, 0.322);
+        -webkit-filter: blur(35px);
+        filter: blur(35px);
+        z-index: 0; }
+      .App .pope-landing .blur-box .name {
+        color: white;
+        font-size: 4em; }
+      .App .pope-landing .blur-box .info {
+        color: #dedede; }
+      .App .pope-landing .blur-box .veredict {
+        color: white;
+        font-size: 2em; }
+      .App .pope-landing .blur-box .content {
+        font-size: 1.3em; }
+      .App .pope-landing .blur-box .thumb-box {
+        display: flex;
+        text-align: center;
+        position: inherit;
+        margin-right: -36px;
+        margin-left: -36px; }
+        .App .pope-landing .blur-box .thumb-box div {
+          width: 50%;
+          padding-top: 15px;
+          padding-bottom: 20px;
+          margin-bottom: -36px; }
+        .App .pope-landing .blur-box .thumb-box .thumb-up-btn {
+          background-color: #2dbbb4; }
+        .App .pope-landing .blur-box .thumb-box .thumb-down-btn {
+          background-color: #f2a929; }
+  .add-name-div {
+    padding-right: 2em;
+    padding-left: 2em;
+    margin-bottom: 3em; }
+  .add-name {
+    background-image: url("/images/people.png");
+    height: 15em; }
+    .add-name .content {
+      background-color: rgba(255, 255, 255, 0.7);
+      height: 100%; }
+      .add-name .content .text {
+        font-size: 2em;
+        margin-top: 0.7em; }
+      .add-name .content .button {
+        float: right;
+        margin-top: 1.3em; }
+        .add-name .content .button a {
+          font-size: 1.5em;
+          text-align: center;
+          border: 3px solid black;
+          padding-left: 2em;
+          padding-right: 2em; }
+  .footer {
+    border-top: 2px dotted;
+    border-color: #dadada;
+    padding-top: 2em;
+    padding-left: 7em;
+    padding-right: 7em;
+    width: 100%;
+    height: 6em; }
+    .footer li {
+      display: inline-block; }
+    .footer .tems-links {
+      float: left;
+      margin-left: -40px; }
+      .footer .tems-links li {
+        padding-right: 1.5em;
+        font-size: 0.8em; }
+    .footer .links {
+      float: right; }
+      .footer .links li {
+        padding-left: 1.5em; }
+        .footer .links li p {
+          font-size: 0.8em; } }
