@@ -20,11 +20,7 @@
 	}
 
 	.pope-landing {
-		background-image: url('/images/pope.png');
-		background-repeat: no-repeat;
-	    background-size: cover;
-		height: 47em;
-
+		height: 47em !important;
 
 		.blur-box{
 			color: #dedede;
@@ -37,15 +33,9 @@
 			padding: 35px;
 		    margin-left: 2em;
 
-		 
-			p{
-			  z-index: 9999;
-			  position: relative;
-			}
-
 			&:before{
-			    width: 200%;
-				height: 200%;
+			    width: 255%;
+    			height: 170%;
 				content: "";
 				position: absolute;
 				top: -37%;
@@ -59,77 +49,22 @@
 			}
 
 			.name {
-				color: white !important;
 				font-size: 4em !important;
 			}
 
-			.info {
-				color: #dedede !important;
-			}
-
 			.veredict {
-				color: white !important;
 				font-size: 2em !important;
 			}
 
 			.content {
 			    font-size: 1.3em !important;
-
 			}
 
 	    	.thumb-box{
-	   		    display: flex;
-	   		    text-align: center;
-
 	   		    position: inherit;
 	    		margin-right: -36px;
 	    		margin-left: -36px;
-
-	   		    div {
-	   		    	width: 50%;
-	   		    	padding-top: 15px;
-	   		    	padding-bottom: 20px;
-	   		    	margin-bottom: -36px;
-	   		    }
-
-	   		    .thumb-up-btn {
-	   		    	background-color: #2dbbb4;
-	   		    }
-	   		    .thumb-down-btn {
-	   		    	background-color: #f2a929;
-	   		    }
 	    	}	
-		}
-	}
-
-	.left-days {
-		bottom: 0;
-		position:absolute;
-		width: 100%;
-
-		.closing-text {
-			width: 35%;
-			text-align: right;
-			color: white;
-			background-color: #00000061;
-			p {
-				font-size: 13px;
-			    margin-bottom: 0px;
-			    margin-top: 1.1em;
-    			margin-right: 1em;
-
-			}
-		}
-		.days {
-			width: 65%;
-			color: black;
-			background-color: #e2e1e1a8;
-			font-size: 2em;
-			p{
-			    margin-bottom: 0px;
-			    margin-left: 0.6em;
-			}
-
 		}
 	}
 
@@ -138,47 +73,35 @@
 	}
 
 	.message-box {
-		background-color: lightgrey;
-		margin-top: 2em;
     	margin-left: 15px;
     	margin-right: 15px;
+	}
 
-    	p {
-    		margin-bottom: 0 !important;
-    	}
+	
 
-    	.statement {
-    		padding: 1em 0 1em 1.7em ;
-    		.statement-1 {
-				font-size: 1.3em;
-    		}
-    		.statement-2 {
-    			font-size: 2em;
-    		}
-    	}
+	.add-name-div {
+		padding-right: 2em;
+    	padding-left: 2em;
+   	    margin-bottom: 3em;
 
-    	.message {
-    		padding-top: 1.7em;
-    	}
+	}
 
-    	.close {
-    		text-align: center;
-    		a {
-    			img {
-    				padding-top: 1.9em;
-    			}
-    		}
-    	}
+	.add-name {
+		height: 6em;
+		.content {
+			.text {
+				float: left;
+			}
+			.button {
+				float: right;
+				margin-top: 1.3em;
+			}
+		}
 	}
 
 	.footer {
-		border-top: 2px dotted;
-		border-color: #dadada;
-		padding-top: 2em;
 		padding-left: 7em;
 		padding-right: 7em;
-		width: 100%;
-		height: 6em;
 
 		li {
 			display: inline-block;
@@ -198,39 +121,6 @@
 				padding-left: 1.5em;
 				p {
 					font-size: 0.8em;
-				}
-			}
-		}
-	}
-
-	.add-name-div {
-		padding-right: 2em;
-    	padding-left: 2em;
-   	    margin-bottom: 3em;
-
-	}
-
-	.add-name {
-		background-image: url('/images/people.png');
-		height: 6em;
-		.content {
-			background-color: rgba(255, 255, 255, 0.7);
-			height: 100%;
-
-			.text {
-				float: left;
-				font-size: 2em;
-				margin-top: 0.7em;
-			}
-			.button {
-				float: right;
-				margin-top: 1.3em;
-				a {
-					font-size: 1.5em;
-					text-align: center;
-					border: 3px solid black;
-					padding-left: 2em; 
-					padding-right: 2em; 
 				}
 			}
 		}

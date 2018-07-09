@@ -14,40 +14,31 @@ body, html, #root {
 		background-repeat: no-repeat;
 	    background-size: cover;
 	    background-position: top;
-		height: 47em;
+		height: 36em;
 	
 		.blur-box{
-			color: #dedede;
-			top: 10em;
-    		width: 100%;
-			background: inherit;
-			position: relative;
-			overflow: hidden;
-			padding: 35px;
+			@media only screen and (max-width: 768px) {
+				background: linear-gradient(360deg, rgba(0,0,0,0.8), rgba(0,0,0,0.01));		
+				margin-left: -15px;
+	    		margin-right: -15px;
+	    		position: absolute;
+	    		width: 100%;
+    		    bottom: 100px;    
+    			padding-top: 50%;
 
-		 
+	    		p {
+	    			padding-left: 25px;
+	    			padding-right: 25px;
+	    			color: white;
+	    		}
+			}
+
 			p{
 			  z-index: 9999;
 			  position: relative;
 			}
 
-			&:before{
-			    width: 200%;
-				height: 200%;
-				content: "";
-				position: absolute;
-				top: -37%;
-				left: -21%;
-				background: inherit;
-				-webkit-box-shadow: inset 0 0 0 5000px rgba(0, 0, 0, 0.322);
-				box-shadow: inset 0 0 0 5000px rgba(0, 0, 0, 0.322);
-			    -webkit-filter: blur(35px);
-			    filter: blur(35px);
-				z-index: 0;
-			}
-
 			.name {
-				color: white;
 				font-size: 2em;
 			}
 
@@ -56,22 +47,21 @@ body, html, #root {
 			}
 
 			.veredict {
-				color: white;
 				font-size: 1em;
 			}
 
 			.content {
 			    font-size: 1em;
-
 			}
 
 	    	.thumb-box{
 	   		    display: flex;
 	   		    text-align: center;
-
 	   		    position: inherit;
-	    		margin-right: -36px;
-	    		margin-left: -36px;
+	    		
+	   		    @media only screen and (max-width: 768px) {
+	   		    	width: 100%;
+	   		    }
 
 	   		    div {
 	   		    	width: 50%;
@@ -335,11 +325,9 @@ body, html, #root {
 }
 
 .add-name-div {
-		padding-right: 2em;
-    	padding-left: 2em;
-   	    margin-bottom: 3em;
-
-	}
+	padding-right: 2em;
+	padding-left: 2em;
+	margin-bottom: 3em;
 
 	.add-name {
 		background-image: url('/images/people.png');
@@ -355,6 +343,8 @@ body, html, #root {
 			.button {
 				margin: auto;
 				margin-top: 1.3em;
+			    text-align: center;
+
 				a {
 					font-size: 1.5em;
 					text-align: center;
@@ -365,6 +355,7 @@ body, html, #root {
 			}
 		}
 	}
+}
 
 .unfinished {
 	height: 650px;
@@ -377,49 +368,49 @@ body, html, #root {
 
 
 .footer {
-		border-top: 2px dotted;
-		border-color: #dadada;
-		padding-top: 2em;
-		width: 100%;
-		height: 6em;
-	
-		@media only screen and (max-width: 767px) { 
-			ul {
-				padding-left: 0px;
-			}
-		}
+	border-top: 2px dotted;
+	border-color: #dadada;
+	padding-top: 2em;
+	width: 100%;
+	height: 6em;
 
-		li {
-			list-style-type: none;
-			text-align: center;
-		}
-
-		.tems-links {
-			@media only screen and (max-width: 767px) { 
-				width: 100%;
-			}
-			li {
-				font-size: 0.8em;
-			}
-		}
-		.links {
-			li {
-				p {
-					font-size: 0.8em;
-				}
-
-			}
-			@media only screen and (max-width: 767px) { 
-				.fb {
-					display: table;
-	  				margin: 0 auto;
-	  				margin-bottom: 1em;
-				}
-				.twrt {
-					display: table;
-	  				margin: 0 auto;
-				}
-
-			}
+	@media only screen and (max-width: 767px) { 
+		ul {
+			padding-left: 0px;
 		}
 	}
+
+	li {
+		list-style-type: none;
+		text-align: center;
+	}
+
+	.tems-links {
+		@media only screen and (max-width: 767px) { 
+			width: 100%;
+		}
+		li {
+			font-size: 0.8em;
+		}
+	}
+	.links {
+		li {
+			p {
+				font-size: 0.8em;
+			}
+
+		}
+		@media only screen and (max-width: 767px) { 
+			.fb {
+				display: table;
+  				margin: 0 auto;
+  				margin-bottom: 1em;
+			}
+			.twrt {
+				display: table;
+  				margin: 0 auto;
+			}
+
+		}
+	}
+}
